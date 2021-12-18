@@ -1,33 +1,46 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        /*zad.1 zadeklaruj i zainicjalizuj zmienne różnych typów i wyświetl w konsoli (im więcej tym lepiej ;) ) */
-        int zmiennaInt = 12;
-        System.out.println("zmienna int = " + zmiennaInt);
+        /* Przykłady wprowadzania tekstu z klawiatury */
+        /* Ta komenda inicjuje strumień wejsciomy danych */
+        Scanner scan = new Scanner(System.in);
 
-        int a = 1, b = 2, c = 3, d = 4;
-        int wynik = b + d;
-        System.out.println(wynik);
+        System.out.print("Podaj imie: ");
 
-        /*
-         *    zad.2 Napisz kod który będzie wykonywał operacje: dodawania, odejmowania,
-         *    mnożenia, dziealenia i modulo na zmiennych:
-         *    a) liczbaA i liczbaB, dowolne liczby calkowite (int),
-         *    b) liczbaX i liczbaY, dowolne liczby zmiennoprzecinkowe (double)
-         *  */
-        int A =37, B = 3;
-        double X = 3.2, Y = 1.5;
-        System.out.println(A + B);
-        System.out.println(A - B);
-        System.out.println(A * B);
-        System.out.println(A / B);
-        System.out.println(A % B);
+        String imie = scan.next();
+        System.out.print("Podaj nazwikso: ");
 
-        System.out.println(X + Y);
-        System.out.println(X - Y);
-        System.out.println(X * Y);
-        System.out.println(X / Y);
-        System.out.println(X % Y);
+        String nazwisko = scan.next();
+
+        System.out.print("Podaj wiek: ");
+
+        int wiek = scan.nextInt();
+        System.out.print("Podaj nr indeksu: ");
+
+        int indeks = scan.nextInt();
+
+
+        System.out.printf("Twoje imie:  " + imie + "\n");
+        System.out.println("Twoje nazwisko: " + nazwisko);
+        System.out.printf("Twoj wiek:  " + wiek  + "\n");
+        System.out.println("Twoj nr indeksu: " + indeks);
+
+
+        int a = 17;
+        int b = 4;
+        int c = a + b;
+        System.out.println(c);
+        c = a - b;
+        System.out.println(c);
+        c = a * b;
+        System.out.println(c);
+        c = a / b;
+        System.out.println(c);
+        c = a % b;
+        System.out.println(c);
+
 
 
     }
