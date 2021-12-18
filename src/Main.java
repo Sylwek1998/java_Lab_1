@@ -3,43 +3,41 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        /* Przykłady wprowadzania tekstu z klawiatury */
-        /* Ta komenda inicjuje strumień wejsciomy danych */
-        Scanner scan = new Scanner(System.in);
+        boolean a = false;
+        boolean b = true;
+        boolean c = true;
+        boolean d = false;
+        System.out.println("Operatory arytmetyczne:" +
+                "\na = false\tb = true\tc = true\t d = false");
 
-        System.out.print("Podaj imie: ");
+        System.out.println("(a && b) : " + (a && b));
+        System.out.println("(a && c) : " + (a && c));
+        System.out.println("(a || b) : " + (a || b));
+        System.out.println("(a || c) : " + (a || c));
+        System.out.println("(true || b) : " + (true || b));
+        System.out.println("!a : " + !a);
+        System.out.println("!d : " + !d);
+        System.out.println("!(c && b) : " + !(c && b));
+        System.out.println("!((a && c) || (!a || b) : " + !((a && c) || (!a || b)));
+        System.out.println();
 
-        String imie = scan.next();
-        System.out.print("Podaj nazwikso: ");
+        int x = 5;
+        int y = 7;
+        int z = 5;
+        int q = 4;
 
-        String nazwisko = scan.next();
+        System.out.printf("Operatory porównania:" +
+                "\nx = %d\ty = %d\tz = %d\t q =%d\n", x, y, z,q);
 
-        System.out.print("Podaj wiek: ");
+        System.out.println("(x == z) : " + (x == z));
+        System.out.println("(q == z) : " + (q == z));
+        System.out.println("(x != y) : " + (x != y));
+        System.out.println("(x != z) : " + (x != z));
+        System.out.println("(x > y) : " + (x > y));
+        System.out.println("(x < y) : " + (x < y));
+        System.out.println("(z >= x) : " + (z >= x));
+        System.out.println("((x > q) || (a && b)) : " + ((x > q) || (a && c)));
 
-        int wiek = scan.nextInt();
-        System.out.print("Podaj nr indeksu: ");
-
-        int indeks = scan.nextInt();
-
-
-        System.out.printf("Twoje imie:  " + imie + "\n");
-        System.out.println("Twoje nazwisko: " + nazwisko);
-        System.out.printf("Twoj wiek:  " + wiek  + "\n");
-        System.out.println("Twoj nr indeksu: " + indeks);
-
-
-        int a = 17;
-        int b = 4;
-        int c = a + b;
-        System.out.println(c);
-        c = a - b;
-        System.out.println(c);
-        c = a * b;
-        System.out.println(c);
-        c = a / b;
-        System.out.println(c);
-        c = a % b;
-        System.out.println(c);
 
 
 
