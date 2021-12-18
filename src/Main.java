@@ -1,18 +1,34 @@
 public class Main {
 
     public static void main(String[] args) {
+        /*zad.1 zadeklaruj i zainicjalizuj zmienne różnych typów i wyświetl w konsoli (im więcej tym lepiej ;) ) */
+        int zmiennaInt = 12;
+        System.out.println("zmienna int = " + zmiennaInt);
 
-        /* Przykłady wyświetlania tekstu w konsoli */
-        System.out.println("Dzień dobry!");
-        System.out.println("To jest mój pierwszy program w języku java");
+        int a = 1, b = 2, c = 3, d = 4;
+        int wynik = b + d;
+        System.out.println(wynik);
 
+        /*
+         *    zad.2 Napisz kod który będzie wykonywał operacje: dodawania, odejmowania,
+         *    mnożenia, dziealenia i modulo na zmiennych:
+         *    a) liczbaA i liczbaB, dowolne liczby calkowite (int),
+         *    b) liczbaX i liczbaY, dowolne liczby zmiennoprzecinkowe (double)
+         *  */
+        int A =37, B = 3;
+        double X = 3.2, Y = 1.5;
+        System.out.println(A + B);
+        System.out.println(A - B);
+        System.out.println(A * B);
+        System.out.println(A / B);
+        System.out.println(A % B);
 
-        System.out.printf("A %s zaczynamy z %d przykładem.\n", "więc", 1);
+        System.out.println(X + Y);
+        System.out.println(X - Y);
+        System.out.println(X * Y);
+        System.out.println(X / Y);
+        System.out.println(X % Y);
 
-        System.out.print("To jest jakieś");
-        System.out.print(" zadanie");
-        System.out.print(" nie za długie.");
-        System.out.println("Do widzenia");
 
     }
 }
